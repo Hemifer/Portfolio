@@ -3,65 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <title>Tyler's Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-
-    /* Heading at the top */
-    h1 {
-      margin: 20px 0;
-      font-size: 2.5rem;
-      color: #333;
-    }
-
-    h3 {
-      margin: 10px 0;
-      color: #000000;
-    }
-
-    /* Projects container */
-    .projects-container {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    /* Grid for projects */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 per row */
-      gap: 20px; /* space between boxes */
-    }
-
-    /* Individual project box */
-    .project-box {
-      background: #e0e0e0;
-      border-radius: 10px;
-      padding: 40px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: transform 0.2s, background 0.2s;
-    }
-
-    /* Hover effect */
-    .project-box:hover {
-      background: #d0d0d0;
-      transform: translateY(-5px);
-    }
-  </style>
 </head>
+
 <body>
   <!-- Heading (no container, just centered) -->
   <h1>Welcome to Tyler's Portfolio!</h1>
@@ -71,7 +16,11 @@
   <div class="projects-container">
     <h2>My Projects</h2>
     <div class="projects-grid">
-      <div class="project-box">Project 1</div>
+      <a href="https://github.com/Hemifer/EcommerceWebsite" target="_blank" class="project-link">
+        <div class="project-box project-box1">
+            Ecommerce Website!
+        </div>
+    </a>
       <div class="project-box">Project 2</div>
       <div class="project-box">Project 3</div>
       <div class="project-box">Project 4</div>
