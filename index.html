@@ -19,25 +19,65 @@
       color: #333;
     }
 
-    /* Project container */
+    h3 {
+      margin: 10px 0;
+      color: #000000;
+    }
+
+    /* Projects container */
     .projects-container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 20px auto;
       padding: 40px;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
+    /* Grid for projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      gap: 20px; /* space between boxes */
+    }
+
+    /* Individual project box */
+    .project-box {
+      background: #e0e0e0;
+      border-radius: 10px;
+      padding: 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    /* Hover effect */
+    .project-box:hover {
+      background: #d0d0d0;
+      transform: translateY(-5px);
+    }
   </style>
 </head>
 <body>
   <!-- Heading (no container, just centered) -->
   <h1>Welcome to Tyler's Portfolio!</h1>
+  <h3>Full-Stack Webpage/App Software developer, knows many languages including but not limited too Python, Java, HTML, Javascript, C#, etc...</h3>
 
-  <!-- Big container for projects -->
+  <!--Project Container-->
   <div class="projects-container">
     <h2>My Projects</h2>
-    <p>Here’s where my work will go.</p>
+    <div class="projects-grid">
+      <div class="project-box">Project 1</div>
+      <div class="project-box">Project 2</div>
+      <div class="project-box">Project 3</div>
+      <div class="project-box">Project 4</div>
+      <div class="project-box">Project 5</div>
+      <div class="project-box">Project 6</div>
+    </div>
   </div>
 </body>
 </html>
