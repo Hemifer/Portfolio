@@ -36,7 +36,7 @@ h3 {
 
     /* Individual project box */
 .project-box {
-    background: #e0e0e0;
+    background: #e0e0e0;  /* default gray for non-image cards */
     border-radius: 10px;
     padding: 40px;
     font-size: 1.2rem;
@@ -45,13 +45,16 @@ h3 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 0.2s, background 0.2s;
+    transition: transform 0.2s; /* only animate transform */
 }
 
+/* Special class with background image */
 .project-box1 {
     background-image: url("images/HemimerceonGit.png");
     background-size: cover;
     background-position: center;
+    color: white; /* makes text readable on image */
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7); /* better contrast */
 }
 
     /* Hover effect */
