@@ -51,15 +51,16 @@ h3 {
 /* Special class with background image */
 .project-box1 {
     background-image: url("images/HemimerceonGit.png");
-    background-size: cover;
-    background-position: center;
-    color: white; /* makes text readable on image */
-    text-shadow: 0 2px 5px rgba(0,0,0,0.7); /* better contrast */
+    background-size: cover;      /* scale image to fill the box */
+    background-position: center; /* keep it centered */
+    background-repeat: no-repeat;/* prevent tiling */
+    color: white; 
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
 }
 
     /* Hover effect */
 .project-box:hover {
-      background: #d0d0d0;
       transform: translateY(-5px);
 }
 
