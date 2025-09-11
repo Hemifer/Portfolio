@@ -44,13 +44,14 @@ body {
     /* Heading at the top */
 h1 {
       margin: 20px 0;
-      font-size: 2.0rem;
+      font-size: 5rem;
       color: #333;
 }
 
 h3 {
       margin: 10px 0;
       color: #000000;
+      font-size: 3.5rem;
 }
 
     /* Projects container */
