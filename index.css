@@ -6,17 +6,19 @@ body {
 }
 
 header.site-header {
+  all: unset; /* reset browser defaults */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #333;
   color: white;
-  padding: 15px 30px;
-  position: fixed;   /* ✅ Always stays at top */
+  padding: 15px 50px;   /* ⬅️ 50px buffer on left + right */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;       /* ✅ Stretch full width */
+  width: 100%;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .header-left {
