@@ -42,18 +42,6 @@ body {
   background: #555;
 }
 
-    /* Heading at the top */
-h1 {
-      margin: 20px 0;
-      font-size: 4rem;
-      color: #333;
-}
-.h1-left {
-      text-align: left;
-      margin-left: 50px;
-
-}
-
 h2 {
   font-family: 'Monsterat', sans-serif;
       margin: 20px 0;
