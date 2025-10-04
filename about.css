@@ -1,13 +1,16 @@
-h1 {
-      margin: 20px 0;
-      font-size: 4rem;
-      color: #333;
-      margin-top: 5vw;
-}
 .text-left {
       text-align: left;
       margin-left: 50px;
 }
-p {
-      font-size: 1.5rem;
+
+.about-section h1 {
+  margin: 20px 0;
+  font-size: 4rem;
+  color: #333;
+  margin-top: 5vw;
+}
+
+.about-section p {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
