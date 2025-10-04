@@ -47,6 +47,11 @@ h1 {
       font-size: 5rem;
       color: #333;
 }
+.h1-left {
+      text-align: left;
+      margin-left: 50px;
+
+}
 
 h3 {
       margin: 10px 0;
