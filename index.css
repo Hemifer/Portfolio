@@ -6,7 +6,7 @@ body {
 }
 
 h2 {
-  font-family: 'Monsterat', sans-serif;
+  font-family: 'Brush Script MT', cursive;
       margin: 20px 0;
       font-size: 3rem;
       color: #000000;
@@ -14,16 +14,15 @@ h2 {
 
 h3 {
   font-family: 'Poppins', sans-serif;
-      margin: 10px 0;
-      color: #000000;
-      font-size: 2rem;
+  margin: 10px 0;
+  color: #000000;
+  font-size: 2rem;
 }
 
 
 body {
-  margin: 0;
+  margin: 50vw;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   text-align: center;
-  padding-top: 70px; /* ✅ Adjust for header height */
 }

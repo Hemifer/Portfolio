@@ -4,13 +4,13 @@
 }
 
 .about-section h1 {
-  margin: 20px 0;
+    margin-bottom: 20px;
   font-size: 4rem;
   color: #333;
   margin-top: 5vw;
 }
 
 .about-section p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
