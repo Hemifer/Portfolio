@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="contact.css">
   <title>Contact Page</title>
 </head>
-
 <body>
-  <!-- Header -->
   <header class="site-header">
     <nav class="header-left">
       <a class="header-left" href="index.html">Tyler Pistilli</a>
@@ -21,27 +19,53 @@
     </nav>
   </header>
 
-  <!-- Contact Info -->
   <div class="contact-section"> 
     <h1>Contact Me</h1>
-    <p>Email: <a href="mailto:pistillityler@gmail.com">pistillityler@gmail.com</a></p>
+    <p>Email: <a href="#" id="email-link">pistillityler@gmail.com</a></p>
     <p>Location: Montreal, QC, Canada</p>
     <p>GitHub: <a href="https://github.com/Hemifer" target="_blank">GitHub</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/tyler-pistilli-44866833b/" target="_blank">LinkedIn</a></p>
   </div>
 
-  <!-- Contact Form -->
-  <form action="https://formspree.io/f/mwprnvzb" method="POST" class="contact-form">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" required>
+  <!-- Contact Form Popup -->
+  <div id="form-popup" class="form-popup">
+    <div class="form-container">
+      <span id="close-btn">&times;</span>
+      <h2>Send me a message</h2>
+      <form action="https://formspree.io/f/mwprnvzb" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
 
-    <label for="message">Message:</label>
-    <textarea name="message" id="message" rows="5" required></textarea>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
 
-    <button type="submit">Send Message</button>
-  </form>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const emailLink = document.getElementById('email-link');
+    const formPopup = document.getElementById('form-popup');
+    const closeBtn = document.getElementById('close-btn');
+
+    emailLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      formPopup.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      formPopup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === formPopup) {
+        formPopup.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
