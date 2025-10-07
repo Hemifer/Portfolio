@@ -23,6 +23,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   cursor: pointer;
