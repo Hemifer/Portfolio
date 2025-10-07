@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header hidden">
     <nav class="header-left">
       <a class="header-left" href="index.html">Tyler Pistilli</a>
     </nav>
@@ -21,7 +21,24 @@
   </header>
 
   
-  <h2>Hello,</h2>
-  <h3>I'm Tyler. Welcome to my Portfolio.</h3>
+  <div class="welcome-text">
+    <h1>Hello,</h1>
+    <h3>I'm Tyler. Welcome to my page.</h3>
+  </div>
+
+  <script>
+  // Wait for the fade-in animation to finish (2s) before showing header
+  window.addEventListener('load', () => {
+    const header = document.querySelector('.site-header');
+    const text = document.querySelector('.welcome-text');
+    
+    // Wait until text animation ends, then show header
+    setTimeout(() => {
+      header.classList.remove('hidden');
+      header.classList.add('fade-in-header');
+    }, 2000); // matches your fadeInText duration
+  });
+</script>
+
 </body>
 </html>

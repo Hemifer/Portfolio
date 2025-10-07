@@ -14,30 +14,17 @@
   color: #5d18ff; 
 }
 
+.contact-section p {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
 h1 {
   font-family: "AvantGarde Md BT";
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 3.8rem;
   color: #000000;
   margin-bottom: 20px;
-}
-
-/* Contact info section */
-.contact-section {
-  text-align: center;
-  margin-top: 8vw;
-  color: #333;
-}
-
-.contact-section a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
-}
-
-.contact-section a:hover {
-  color: #0077b5; /* LinkedIn blue */
 }
 
 /* ===== Popup Styling ===== */
