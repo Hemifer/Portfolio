@@ -11,5 +11,13 @@
 }
 
 .contact-section a:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: #5d18ff; 
+}
+
+h1 {
+  font-family: "AvantGarde Md BT";
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 20px;
 }
