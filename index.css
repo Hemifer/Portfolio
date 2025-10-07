@@ -5,103 +5,59 @@ body {
       text-align: center;
 }
 
-header.site-header {
-  all: unset; /* reset browser defaults */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #333;
-  color: white;
-  padding: 15px 50px;   /* ⬅️ 50px buffer on left + right */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-sizing: border-box;
-}
-
-.header-left {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.header-right {
-  display: flex;
-  gap: 20px;
-}
-
-.header-right a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background 0.2s;
-}
-
-.header-right a:hover {
-  background: #555;
-}
-
-    /* Heading at the top */
-h1 {
+h2 {
+  font-family: 'Brush Script MT', cursive;
       margin: 20px 0;
-      font-size: 5rem;
-      color: #333;
-}
-
-h3 {
-      margin: 10px 0;
+      font-size: 4.2rem;
       color: #000000;
       font-size: 3.5rem;
 }
 
-    /* Projects container */
-.projects-container {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+h3 {
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+  color: #000000;
+  font-size: 2rem;
 }
 
-    /* Grid for projects */
-.projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 per row */
-      gap: 20px; /* space between boxes */
-}
-
-.project-box {
-  background: #e0e0e0;
-  border-radius: 10px;
-  padding: 40px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 0.2s, background 0.2s; /* smooth hover effect */
-}
-
-/* Hover effect */
-.project-box:hover {
-  background: #d0d0d0;
-  transform: translateY(-5px);
-}
-
-.project-link {
-  text-decoration: none; /* remove underline */
-  color: inherit;        /* keep text color same as card */
-  display: block;        /* make the link wrap the whole div */
-}
 
 body {
-  margin: 0;
+  margin-top: 10vw;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   text-align: center;
-  padding-top: 70px; /* ✅ Adjust for header height */
+}
+
+/* Hide header initially */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Fade-in animation for text */
+.welcome-text {
+  text-align: center;
+  margin-top: 30vh;
+  opacity: 0;
+  animation: fadeInText 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-header {
+  animation: fadeInHeader 1.2s ease-in forwards;
+}
+
+@keyframes fadeInHeader {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
