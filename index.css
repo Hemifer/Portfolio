@@ -38,7 +38,7 @@ body {
   text-align: center;
   margin-top: 30vh;
   opacity: 0;
-  animation: fadeInText 2s ease-in forwards;
+  animation: fadeInText 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes fadeInText {

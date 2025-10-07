@@ -41,15 +41,16 @@
 }
 
 h2 {
-  font-family: 'Monsserat', sans-serif;
-      margin: 20px 0;
-      font-size: 3rem;
-      color: #000000;
+  text-align: center;
+  font-family: 'Book Antiqua', serif;
+  margin: 20px 0;
+  font-size: 3.2rem;
+  color: #000000;
 }
 
 h3 {
   font-family: 'Poppins', sans-serif;
-      margin: 10px 0;
-      color: #000000;
-      font-size: 2rem;
+  margin: 10px 0;
+  color: #000000;
+  font-size: 2rem;
 }
