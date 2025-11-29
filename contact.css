@@ -13,6 +13,9 @@
 .contact-section a:hover {
   color: #5d18ff; 
 }
+.purple {
+  color: #5d18ff;
+}
 
 .contact-section p {
   font-size: 2rem;
