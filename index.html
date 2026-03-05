@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="header.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="index.css" />
   <title>Home Page</title>
 </head>
 
 <body>
-  <header class="site-header hidden">
+  <!-- Universal Header -->
+  <header class="site-header">
     <nav class="header-left">
       <a class="header-left" href="index.html">Tyler Pistilli</a>
     </nav>
@@ -20,24 +21,129 @@
     </nav>
   </header>
 
-  <div class="welcome-text">
-    <h2>Hello,</h2>
-    <h3>I'm Tyler. Welcome to my page.</h3>
-  </div>
+  <main class="page">
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h2 class="hero-name">Tyler Pistilli</h2>
+        <h3 class="hero-title">Full-Stack Developer</h3>
+
+        <p class="hero-bio">
+          I’m a computer science student at College LaSalle focusing on software development, APIs,
+          and full-stack web applications.
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="contact.html" class="btn btn-ghost">Contact</a>
+        </div>
+
+        <div class="quirk-line">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="quirk-text">built with curiosity + caffeine</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section">
+      <div class="section-head">
+        <h4>About</h4>
+        <a class="section-link" href="about.html">Read more →</a>
+      </div>
+
+      <div class="card">
+        <p class="card-text">
+          I’m currently in my Computer Science program (420.B0) and I love building clean interfaces,
+          experimenting with backend APIs, and turning ideas into real projects.
+        </p>
+
+        <div class="pill-row">
+          <span class="pill">Java</span>
+          <span class="pill">Python</span>
+          <span class="pill">React</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Firebase</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section">
+      <div class="section-head">
+        <h4>Featured Projects</h4>
+        <a class="section-link" href="projects.html">View all →</a>
+      </div>
+
+      <div class="featured-grid">
+        <a class="project-card" href="https://github.com/Hemifer/EcommerceWebsite" target="_blank">
+          <div class="project-top">
+            <div class="project-title">Ecommerce Website</div>
+            <div class="project-tag">React • JS</div>
+          </div>
+          <div class="project-desc">
+            Authentication + custom cart flow + product pages.
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Hemifer/BankManagement" target="_blank">
+          <div class="project-top">
+            <div class="project-title">Bank Management</div>
+            <div class="project-tag">Java</div>
+          </div>
+          <div class="project-desc">
+            Accounts, customers, transactions, and DB-backed logic.
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Hemifer/PythonAPIF2024" target="_blank">
+          <div class="project-top">
+            <div class="project-title">API App</div>
+            <div class="project-tag">Python</div>
+          </div>
+          <div class="project-desc">
+            Backend experimentation with routes and structured data.
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Hemifer/LearnF1" target="_blank">
+          <div class="project-top">
+            <div class="project-title">Learn F1</div>
+            <div class="project-tag">React • JS</div>
+          </div>
+          <div class="project-desc">
+            A clean educational site with expandable content sections.
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section class="section contact-strip">
+      <div class="contact-left">
+        <h4>Let’s connect</h4>
+        <p>Open to internships, collaborations, and building cool stuff.</p>
+      </div>
+
+      <div class="contact-right">
+        <a class="mini-link" href="mailto:pistillityler@gmail.com">Email</a>
+        <a class="mini-link" href="https://github.com/Hemifer" target="_blank">GitHub</a>
+        <a class="mini-link" href="https://www.linkedin.com/in/tyler-pistilli-44866833b/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Tyler Pistilli</span>
+      <span class="footer-sep">•</span>
+      <span class="footer-note">Portfolio v1</span>
+    </footer>
+  </main>
 
   <script>
-  // Wait for the fade-in animation to finish (2s) before showing header
-  window.addEventListener('load', () => {
-    const header = document.querySelector('.site-header');
-    const text = document.querySelector('.welcome-text');
-    
-    // Wait until text animation ends, then show header
-    setTimeout(() => {
-      header.classList.remove('hidden');
-      header.classList.add('fade-in-header');
-    }, 2000); // matches your fadeInText duration
-  });
-</script>
-
+    // tiny polish: set current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
