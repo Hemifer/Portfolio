@@ -382,3 +382,11 @@ body {
     font-size: 1.5rem;
   }
 }
+
+.profile-pic {
+  width: 150px;           
+  height: 150px;          
+  border-radius: 50%;     
+  object-fit: cover;      
+  border: 4px solid rgb(177, 115, 0);
+}
