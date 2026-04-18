@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,20 +22,27 @@
   </header>
 
   <main class="page">
-    <!-- Hero / Intro -->
     <section class="hero">
       <div class="hero-inner">
-        <h2 class="hero-name">Tyler Pistilli</h2>
-        <h3 class="hero-title">Junior Full-Stack Developer</h3>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2 class="hero-name">Tyler Pistilli</h2>
+            <h3 class="hero-title">Junior Full-Stack Developer</h3>
 
-        <p class="hero-bio">
-          Hello and Welcome! I’m a computer science student at College LaSalle focusing on software development, APIs,
-          and full-stack web applications.
-        </p>
-        <img src="/pictures/Tyler_Face.JPEG" class="profilepic"/>
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">View Projects</a>
-          <a href="contact.html" class="btn btn-ghost">Contact</a>
+            <p class="hero-bio">
+              Hello and Welcome! I’m a computer science student at College LaSalle focusing on software development,
+              APIs, and full-stack web applications.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">View Projects</a>
+              <a href="contact.html" class="btn btn-ghost">Contact</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="pictures/tyler_face.JPEG" class="profile-pic" />
+          </div>
         </div>
       </div>
     </section>
@@ -145,4 +153,5 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
